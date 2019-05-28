@@ -44,6 +44,8 @@ body {
   grid-template-areas: 
     "head head"
     "da re";
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
 }
 
 .he {
