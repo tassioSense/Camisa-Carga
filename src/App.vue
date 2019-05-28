@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-   <div id="he"></div>
+   <div class="he"></div>
    <div id="dados">
 
-      <Dados/>
+      <Dados id="dados-in"/>
+      <div id="protocol"></div>
 
    </div>
 
@@ -35,10 +36,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
   width: 100%;
+  display: grid;
 
-
- 
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 50px 600px;
+  grid-template-areas: 
+    "head head"
+    "da re";
 }
+
+.he {
+  grid-area: head;
+}
+
+#dados {
+  grid-area: da;
+}
+
+#results {
+  grid-area: re;
+}
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-
+  <div class="dados"></div>
 </template>
 
 <script>
@@ -27,4 +27,7 @@ li {
 a {
   color: #42b983;
 }
+
+
+
 </style>
